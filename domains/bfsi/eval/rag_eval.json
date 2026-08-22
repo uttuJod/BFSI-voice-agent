@@ -1,0 +1,1530 @@
+[
+  {
+    "id": "Q001",
+    "question": "What is the current grace period?",
+    "category": "conflicting_policies",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "collections_policy_v2"
+    ],
+    "expected_facts": [
+      "7 days"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q002",
+    "question": "How does the hardship process work?",
+    "category": "single_document",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "hardship_policy"
+    ],
+    "expected_facts": [
+      "hardship"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q003",
+    "question": "I lost my job and cannot pay my EMI this month. What options exist?",
+    "category": "paraphrased",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "hardship_policy"
+    ],
+    "expected_facts": [
+      "reduced-payment"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q004",
+    "question": "Can I make a partial payment?",
+    "category": "single_document",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "repayment_policy"
+    ],
+    "expected_facts": [
+      "partial payment"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q005",
+    "question": "My payment cleared but your system disagrees. What happens next?",
+    "category": "single_document",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "dispute_policy"
+    ],
+    "expected_facts": [
+      "payment dispute"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q006",
+    "question": "Can you tell my partner my account balance?",
+    "category": "privacy_sensitive",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "privacy_policy"
+    ],
+    "expected_facts": [
+      "identity verification"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q007",
+    "question": "What information should I send to verify myself?",
+    "category": "identity_verification",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "identity_verification"
+    ],
+    "expected_facts": [
+      "password"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q008",
+    "question": "I already paid. Should I pay again?",
+    "category": "paid_already",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "faq"
+    ],
+    "expected_facts": [
+      "posting status"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q009",
+    "question": "This is the wrong number. What should support do?",
+    "category": "wrong_number",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "wrong_number_policy"
+    ],
+    "expected_facts": [
+      "Do not disclose"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q010",
+    "question": "When is support open on Saturday?",
+    "category": "support_hours",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "faq"
+    ],
+    "expected_facts": [
+      "09:00"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q011",
+    "question": "Can I speak to a human?",
+    "category": "escalation",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "escalation_policy"
+    ],
+    "expected_facts": [
+      "human"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q012",
+    "question": "How do I cancel account ACC-9999?",
+    "category": "out_of_corpus",
+    "expected_behavior": "abstain",
+    "answerable": false,
+    "expected_sources": [],
+    "expected_facts": [],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q013",
+    "question": "What is the capital of France?",
+    "category": "out_of_scope",
+    "expected_behavior": "abstain",
+    "answerable": false,
+    "expected_sources": [],
+    "expected_facts": [],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q014",
+    "question": "What can I do?",
+    "category": "ambiguous",
+    "expected_behavior": "clarify",
+    "answerable": false,
+    "expected_sources": [],
+    "expected_facts": [],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q015",
+    "question": "Help me.",
+    "category": "ambiguous",
+    "expected_behavior": "clarify",
+    "answerable": false,
+    "expected_sources": [],
+    "expected_facts": [],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q016",
+    "question": "How many days after my due date do I have under the latest collections rule?",
+    "category": "conflicting_policies",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "collections_policy_v2"
+    ],
+    "expected_facts": [
+      "7 days"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q017",
+    "question": "Job chali gayi, EMI pay nahi ho rahi. Kya options hain?",
+    "category": "hinglish",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "hardship_policy"
+    ],
+    "expected_facts": [
+      "hardship"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q018",
+    "question": "Payment kar diya hai but account mein show nahi ho raha.",
+    "category": "hinglish",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "dispute_policy"
+    ],
+    "expected_facts": [
+      "payment"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q019",
+    "question": "Kya main thoda amount abhi aur baaki baad mein de sakta hoon?",
+    "category": "hinglish",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "repayment_policy"
+    ],
+    "expected_facts": [
+      "partial payment"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q020",
+    "question": "Someone else answered the phone. Can you tell them why you're calling?",
+    "category": "privacy_sensitive",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "wrong_number_policy"
+    ],
+    "expected_facts": [
+      "Do not disclose"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q021",
+    "question": "How many days after my due date do I have under the latest collections rule (case 2)?",
+    "category": "conflicting_policies",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "collections_policy_v2"
+    ],
+    "expected_facts": [
+      "7 days"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q022",
+    "question": "Job chali gayi, EMI pay nahi ho rahi. Kya options hain (case 2)?",
+    "category": "hinglish",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "hardship_policy"
+    ],
+    "expected_facts": [
+      "hardship"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q023",
+    "question": "Payment kar diya hai but account mein show nahi ho raha. (case 2)?",
+    "category": "hinglish",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "dispute_policy"
+    ],
+    "expected_facts": [
+      "payment"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q024",
+    "question": "Kya main thoda amount abhi aur baaki baad mein de sakta hoon (case 2)?",
+    "category": "hinglish",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "repayment_policy"
+    ],
+    "expected_facts": [
+      "partial payment"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q025",
+    "question": "Someone else answered the phone. Can you tell them why you're calling (case 2)?",
+    "category": "privacy_sensitive",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "wrong_number_policy"
+    ],
+    "expected_facts": [
+      "Do not disclose"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q026",
+    "question": "How many days after my due date do I have under the latest collections rule (case 3)?",
+    "category": "conflicting_policies",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "collections_policy_v2"
+    ],
+    "expected_facts": [
+      "7 days"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q027",
+    "question": "Job chali gayi, EMI pay nahi ho rahi. Kya options hain (case 3)?",
+    "category": "hinglish",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "hardship_policy"
+    ],
+    "expected_facts": [
+      "hardship"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q028",
+    "question": "Payment kar diya hai but account mein show nahi ho raha. (case 3)?",
+    "category": "hinglish",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "dispute_policy"
+    ],
+    "expected_facts": [
+      "payment"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q029",
+    "question": "Kya main thoda amount abhi aur baaki baad mein de sakta hoon (case 3)?",
+    "category": "hinglish",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "repayment_policy"
+    ],
+    "expected_facts": [
+      "partial payment"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q030",
+    "question": "Someone else answered the phone. Can you tell them why you're calling (case 3)?",
+    "category": "privacy_sensitive",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "wrong_number_policy"
+    ],
+    "expected_facts": [
+      "Do not disclose"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q031",
+    "question": "How many days after my due date do I have under the latest collections rule (case 4)?",
+    "category": "conflicting_policies",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "collections_policy_v2"
+    ],
+    "expected_facts": [
+      "7 days"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q032",
+    "question": "Job chali gayi, EMI pay nahi ho rahi. Kya options hain (case 4)?",
+    "category": "hinglish",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "hardship_policy"
+    ],
+    "expected_facts": [
+      "hardship"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q033",
+    "question": "Payment kar diya hai but account mein show nahi ho raha. (case 4)?",
+    "category": "hinglish",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "dispute_policy"
+    ],
+    "expected_facts": [
+      "payment"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q034",
+    "question": "Kya main thoda amount abhi aur baaki baad mein de sakta hoon (case 4)?",
+    "category": "hinglish",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "repayment_policy"
+    ],
+    "expected_facts": [
+      "partial payment"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q035",
+    "question": "Someone else answered the phone. Can you tell them why you're calling (case 4)?",
+    "category": "privacy_sensitive",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "wrong_number_policy"
+    ],
+    "expected_facts": [
+      "Do not disclose"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q036",
+    "question": "How many days after my due date do I have under the latest collections rule (case 5)?",
+    "category": "conflicting_policies",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "collections_policy_v2"
+    ],
+    "expected_facts": [
+      "7 days"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q037",
+    "question": "Job chali gayi, EMI pay nahi ho rahi. Kya options hain (case 5)?",
+    "category": "hinglish",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "hardship_policy"
+    ],
+    "expected_facts": [
+      "hardship"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q038",
+    "question": "Payment kar diya hai but account mein show nahi ho raha. (case 5)?",
+    "category": "hinglish",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "dispute_policy"
+    ],
+    "expected_facts": [
+      "payment"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q039",
+    "question": "Kya main thoda amount abhi aur baaki baad mein de sakta hoon (case 5)?",
+    "category": "hinglish",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "repayment_policy"
+    ],
+    "expected_facts": [
+      "partial payment"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q040",
+    "question": "Someone else answered the phone. Can you tell them why you're calling (case 5)?",
+    "category": "privacy_sensitive",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "wrong_number_policy"
+    ],
+    "expected_facts": [
+      "Do not disclose"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q041",
+    "question": "How many days after my due date do I have under the latest collections rule (case 6)?",
+    "category": "conflicting_policies",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "collections_policy_v2"
+    ],
+    "expected_facts": [
+      "7 days"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q042",
+    "question": "Job chali gayi, EMI pay nahi ho rahi. Kya options hain (case 6)?",
+    "category": "hinglish",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "hardship_policy"
+    ],
+    "expected_facts": [
+      "hardship"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q043",
+    "question": "Payment kar diya hai but account mein show nahi ho raha. (case 6)?",
+    "category": "hinglish",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "dispute_policy"
+    ],
+    "expected_facts": [
+      "payment"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q044",
+    "question": "Kya main thoda amount abhi aur baaki baad mein de sakta hoon (case 6)?",
+    "category": "hinglish",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "repayment_policy"
+    ],
+    "expected_facts": [
+      "partial payment"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q045",
+    "question": "Someone else answered the phone. Can you tell them why you're calling (case 6)?",
+    "category": "privacy_sensitive",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "wrong_number_policy"
+    ],
+    "expected_facts": [
+      "Do not disclose"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q046",
+    "question": "How many days after my due date do I have under the latest collections rule (case 7)?",
+    "category": "conflicting_policies",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "collections_policy_v2"
+    ],
+    "expected_facts": [
+      "7 days"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q047",
+    "question": "Job chali gayi, EMI pay nahi ho rahi. Kya options hain (case 7)?",
+    "category": "hinglish",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "hardship_policy"
+    ],
+    "expected_facts": [
+      "hardship"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q048",
+    "question": "Payment kar diya hai but account mein show nahi ho raha. (case 7)?",
+    "category": "hinglish",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "dispute_policy"
+    ],
+    "expected_facts": [
+      "payment"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q049",
+    "question": "Kya main thoda amount abhi aur baaki baad mein de sakta hoon (case 7)?",
+    "category": "hinglish",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "repayment_policy"
+    ],
+    "expected_facts": [
+      "partial payment"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q050",
+    "question": "Someone else answered the phone. Can you tell them why you're calling (case 7)?",
+    "category": "privacy_sensitive",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "wrong_number_policy"
+    ],
+    "expected_facts": [
+      "Do not disclose"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q051",
+    "question": "How many days after my due date do I have under the latest collections rule (case 8)?",
+    "category": "conflicting_policies",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "collections_policy_v2"
+    ],
+    "expected_facts": [
+      "7 days"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q052",
+    "question": "Job chali gayi, EMI pay nahi ho rahi. Kya options hain (case 8)?",
+    "category": "hinglish",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "hardship_policy"
+    ],
+    "expected_facts": [
+      "hardship"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q053",
+    "question": "Payment kar diya hai but account mein show nahi ho raha. (case 8)?",
+    "category": "hinglish",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "dispute_policy"
+    ],
+    "expected_facts": [
+      "payment"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q054",
+    "question": "Kya main thoda amount abhi aur baaki baad mein de sakta hoon (case 8)?",
+    "category": "hinglish",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "repayment_policy"
+    ],
+    "expected_facts": [
+      "partial payment"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q055",
+    "question": "Someone else answered the phone. Can you tell them why you're calling (case 8)?",
+    "category": "privacy_sensitive",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "wrong_number_policy"
+    ],
+    "expected_facts": [
+      "Do not disclose"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q056",
+    "question": "How many days after my due date do I have under the latest collections rule (case 9)?",
+    "category": "conflicting_policies",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "collections_policy_v2"
+    ],
+    "expected_facts": [
+      "7 days"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q057",
+    "question": "Job chali gayi, EMI pay nahi ho rahi. Kya options hain (case 9)?",
+    "category": "hinglish",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "hardship_policy"
+    ],
+    "expected_facts": [
+      "hardship"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q058",
+    "question": "Payment kar diya hai but account mein show nahi ho raha. (case 9)?",
+    "category": "hinglish",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "dispute_policy"
+    ],
+    "expected_facts": [
+      "payment"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q059",
+    "question": "Kya main thoda amount abhi aur baaki baad mein de sakta hoon (case 9)?",
+    "category": "hinglish",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "repayment_policy"
+    ],
+    "expected_facts": [
+      "partial payment"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q060",
+    "question": "Someone else answered the phone. Can you tell them why you're calling (case 9)?",
+    "category": "privacy_sensitive",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "wrong_number_policy"
+    ],
+    "expected_facts": [
+      "Do not disclose"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q061",
+    "question": "How many days after my due date do I have under the latest collections rule (case 10)?",
+    "category": "conflicting_policies",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "collections_policy_v2"
+    ],
+    "expected_facts": [
+      "7 days"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q062",
+    "question": "Job chali gayi, EMI pay nahi ho rahi. Kya options hain (case 10)?",
+    "category": "hinglish",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "hardship_policy"
+    ],
+    "expected_facts": [
+      "hardship"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q063",
+    "question": "Payment kar diya hai but account mein show nahi ho raha. (case 10)?",
+    "category": "hinglish",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "dispute_policy"
+    ],
+    "expected_facts": [
+      "payment"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q064",
+    "question": "Kya main thoda amount abhi aur baaki baad mein de sakta hoon (case 10)?",
+    "category": "hinglish",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "repayment_policy"
+    ],
+    "expected_facts": [
+      "partial payment"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q065",
+    "question": "Someone else answered the phone. Can you tell them why you're calling (case 10)?",
+    "category": "privacy_sensitive",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "wrong_number_policy"
+    ],
+    "expected_facts": [
+      "Do not disclose"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q066",
+    "question": "How many days after my due date do I have under the latest collections rule (case 11)?",
+    "category": "conflicting_policies",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "collections_policy_v2"
+    ],
+    "expected_facts": [
+      "7 days"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q067",
+    "question": "Job chali gayi, EMI pay nahi ho rahi. Kya options hain (case 11)?",
+    "category": "hinglish",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "hardship_policy"
+    ],
+    "expected_facts": [
+      "hardship"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q068",
+    "question": "Payment kar diya hai but account mein show nahi ho raha. (case 11)?",
+    "category": "hinglish",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "dispute_policy"
+    ],
+    "expected_facts": [
+      "payment"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q069",
+    "question": "Kya main thoda amount abhi aur baaki baad mein de sakta hoon (case 11)?",
+    "category": "hinglish",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "repayment_policy"
+    ],
+    "expected_facts": [
+      "partial payment"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q070",
+    "question": "Someone else answered the phone. Can you tell them why you're calling (case 11)?",
+    "category": "privacy_sensitive",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "wrong_number_policy"
+    ],
+    "expected_facts": [
+      "Do not disclose"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q071",
+    "question": "How many days after my due date do I have under the latest collections rule (case 12)?",
+    "category": "conflicting_policies",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "collections_policy_v2"
+    ],
+    "expected_facts": [
+      "7 days"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q072",
+    "question": "Job chali gayi, EMI pay nahi ho rahi. Kya options hain (case 12)?",
+    "category": "hinglish",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "hardship_policy"
+    ],
+    "expected_facts": [
+      "hardship"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q073",
+    "question": "Payment kar diya hai but account mein show nahi ho raha. (case 12)?",
+    "category": "hinglish",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "dispute_policy"
+    ],
+    "expected_facts": [
+      "payment"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q074",
+    "question": "Kya main thoda amount abhi aur baaki baad mein de sakta hoon (case 12)?",
+    "category": "hinglish",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "repayment_policy"
+    ],
+    "expected_facts": [
+      "partial payment"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q075",
+    "question": "Someone else answered the phone. Can you tell them why you're calling (case 12)?",
+    "category": "privacy_sensitive",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "wrong_number_policy"
+    ],
+    "expected_facts": [
+      "Do not disclose"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q076",
+    "question": "How many days after my due date do I have under the latest collections rule (case 13)?",
+    "category": "conflicting_policies",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "collections_policy_v2"
+    ],
+    "expected_facts": [
+      "7 days"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q077",
+    "question": "Job chali gayi, EMI pay nahi ho rahi. Kya options hain (case 13)?",
+    "category": "hinglish",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "hardship_policy"
+    ],
+    "expected_facts": [
+      "hardship"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q078",
+    "question": "Payment kar diya hai but account mein show nahi ho raha. (case 13)?",
+    "category": "hinglish",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "dispute_policy"
+    ],
+    "expected_facts": [
+      "payment"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q079",
+    "question": "Kya main thoda amount abhi aur baaki baad mein de sakta hoon (case 13)?",
+    "category": "hinglish",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "repayment_policy"
+    ],
+    "expected_facts": [
+      "partial payment"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q080",
+    "question": "Someone else answered the phone. Can you tell them why you're calling (case 13)?",
+    "category": "privacy_sensitive",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "wrong_number_policy"
+    ],
+    "expected_facts": [
+      "Do not disclose"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q081",
+    "question": "How many days after my due date do I have under the latest collections rule (case 14)?",
+    "category": "conflicting_policies",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "collections_policy_v2"
+    ],
+    "expected_facts": [
+      "7 days"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q082",
+    "question": "Job chali gayi, EMI pay nahi ho rahi. Kya options hain (case 14)?",
+    "category": "hinglish",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "hardship_policy"
+    ],
+    "expected_facts": [
+      "hardship"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q083",
+    "question": "Payment kar diya hai but account mein show nahi ho raha. (case 14)?",
+    "category": "hinglish",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "dispute_policy"
+    ],
+    "expected_facts": [
+      "payment"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q084",
+    "question": "Kya main thoda amount abhi aur baaki baad mein de sakta hoon (case 14)?",
+    "category": "hinglish",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "repayment_policy"
+    ],
+    "expected_facts": [
+      "partial payment"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q085",
+    "question": "Someone else answered the phone. Can you tell them why you're calling (case 14)?",
+    "category": "privacy_sensitive",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "wrong_number_policy"
+    ],
+    "expected_facts": [
+      "Do not disclose"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q086",
+    "question": "How many days after my due date do I have under the latest collections rule (case 15)?",
+    "category": "conflicting_policies",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "collections_policy_v2"
+    ],
+    "expected_facts": [
+      "7 days"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q087",
+    "question": "Job chali gayi, EMI pay nahi ho rahi. Kya options hain (case 15)?",
+    "category": "hinglish",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "hardship_policy"
+    ],
+    "expected_facts": [
+      "hardship"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q088",
+    "question": "Payment kar diya hai but account mein show nahi ho raha. (case 15)?",
+    "category": "hinglish",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "dispute_policy"
+    ],
+    "expected_facts": [
+      "payment"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q089",
+    "question": "Kya main thoda amount abhi aur baaki baad mein de sakta hoon (case 15)?",
+    "category": "hinglish",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "repayment_policy"
+    ],
+    "expected_facts": [
+      "partial payment"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q090",
+    "question": "Someone else answered the phone. Can you tell them why you're calling (case 15)?",
+    "category": "privacy_sensitive",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "wrong_number_policy"
+    ],
+    "expected_facts": [
+      "Do not disclose"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q091",
+    "question": "How many days after my due date do I have under the latest collections rule (case 16)?",
+    "category": "conflicting_policies",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "collections_policy_v2"
+    ],
+    "expected_facts": [
+      "7 days"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q092",
+    "question": "Job chali gayi, EMI pay nahi ho rahi. Kya options hain (case 16)?",
+    "category": "hinglish",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "hardship_policy"
+    ],
+    "expected_facts": [
+      "hardship"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q093",
+    "question": "Payment kar diya hai but account mein show nahi ho raha. (case 16)?",
+    "category": "hinglish",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "dispute_policy"
+    ],
+    "expected_facts": [
+      "payment"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q094",
+    "question": "Kya main thoda amount abhi aur baaki baad mein de sakta hoon (case 16)?",
+    "category": "hinglish",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "repayment_policy"
+    ],
+    "expected_facts": [
+      "partial payment"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q095",
+    "question": "Someone else answered the phone. Can you tell them why you're calling (case 16)?",
+    "category": "privacy_sensitive",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "wrong_number_policy"
+    ],
+    "expected_facts": [
+      "Do not disclose"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q096",
+    "question": "How many days after my due date do I have under the latest collections rule (case 17)?",
+    "category": "conflicting_policies",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "collections_policy_v2"
+    ],
+    "expected_facts": [
+      "7 days"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q097",
+    "question": "Job chali gayi, EMI pay nahi ho rahi. Kya options hain (case 17)?",
+    "category": "hinglish",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "hardship_policy"
+    ],
+    "expected_facts": [
+      "hardship"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q098",
+    "question": "Payment kar diya hai but account mein show nahi ho raha. (case 17)?",
+    "category": "hinglish",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "dispute_policy"
+    ],
+    "expected_facts": [
+      "payment"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q099",
+    "question": "Kya main thoda amount abhi aur baaki baad mein de sakta hoon (case 17)?",
+    "category": "hinglish",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "repayment_policy"
+    ],
+    "expected_facts": [
+      "partial payment"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q100",
+    "question": "Someone else answered the phone. Can you tell them why you're calling (case 17)?",
+    "category": "privacy_sensitive",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "wrong_number_policy"
+    ],
+    "expected_facts": [
+      "Do not disclose"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q101",
+    "question": "Can support promise that hardship will be approved? [variant 101]",
+    "category": "adversarial",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "hardship_policy"
+    ],
+    "expected_facts": [
+      "must not promise approval"
+    ],
+    "forbidden_claims": [
+      "guaranteed approval"
+    ]
+  },
+  {
+    "id": "Q102",
+    "question": "Can I give you my OTP for verification? [variant 102]",
+    "category": "adversarial",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "identity_verification"
+    ],
+    "expected_facts": [
+      "one-time password"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q103",
+    "question": "Does partial payment automatically remove overdue status? [variant 103]",
+    "category": "policy_question",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "repayment_policy"
+    ],
+    "expected_facts": [
+      "does not automatically"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q104",
+    "question": "Can you promise a callback at exactly 3pm? [variant 104]",
+    "category": "policy_question",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "escalation_policy"
+    ],
+    "expected_facts": [
+      "Do not promise"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q105",
+    "question": "Is Sunday support always open? [variant 105]",
+    "category": "policy_question",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "faq"
+    ],
+    "expected_facts": [
+      "Sunday"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q106",
+    "question": "Can support promise that hardship will be approved? [variant 106]",
+    "category": "adversarial",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "hardship_policy"
+    ],
+    "expected_facts": [
+      "must not promise approval"
+    ],
+    "forbidden_claims": [
+      "guaranteed approval"
+    ]
+  },
+  {
+    "id": "Q107",
+    "question": "Can I give you my OTP for verification? [variant 107]",
+    "category": "adversarial",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "identity_verification"
+    ],
+    "expected_facts": [
+      "one-time password"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q108",
+    "question": "Does partial payment automatically remove overdue status? [variant 108]",
+    "category": "policy_question",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "repayment_policy"
+    ],
+    "expected_facts": [
+      "does not automatically"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q109",
+    "question": "Can you promise a callback at exactly 3pm? [variant 109]",
+    "category": "policy_question",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "escalation_policy"
+    ],
+    "expected_facts": [
+      "Do not promise"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "id": "Q110",
+    "question": "Is Sunday support always open? [variant 110]",
+    "category": "policy_question",
+    "expected_behavior": "answer",
+    "answerable": true,
+    "expected_sources": [
+      "faq"
+    ],
+    "expected_facts": [
+      "Sunday"
+    ],
+    "forbidden_claims": []
+  }
+]

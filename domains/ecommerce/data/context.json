@@ -1,0 +1,9 @@
+{
+  "orders": [
+    { "order_id": "ORD124", "status": "in_transit", "item": "Running Shoes" }
+  ],
+  "policies": {
+    "returns": { "window_days": 7 },
+    "refunds": { "processing_time_days": 5 }
+  }
+}

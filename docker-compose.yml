@@ -1,0 +1,70 @@
+# docker compose up            full stack with local vLLM (needs NVIDIA GPU + nvidia-container-toolkit)
+# docker compose --profile hosted up app worker jobs-api
+#                               no GPU: point VLLM_BASE_URL/VLLM_MODEL at any OpenAI-compatible endpoint in .env
+services:
+  vllm:
+    image: vllm/vllm-openai:latest
+    command: >
+      --model unsloth/Qwen3.5-4B --served-model-name qwen35-base --port 8001
+      --language-model-only --quantization bitsandbytes
+      --enable-lora --max-loras 1 --max-lora-rank 32
+      --lora-modules bfsi-router=/models/qwen35_customer_support_FINAL_FROZEN
+      --chat-template /models/qwen35_customer_support_FINAL_FROZEN/chat_template.jinja
+      --max-model-len 2048 --max-num-seqs 32 --gpu-memory-utilization 0.85 --enable-prefix-caching
+    environment:
+      - HF_TOKEN=${HF_TOKEN:-}
+      - VLLM_USE_FLASHINFER_SAMPLER=0
+    volumes:
+      - ./models:/models:ro
+      - hf-cache:/root/.cache/huggingface
+    ports: ["8001:8001"]
+    deploy:
+      resources:
+        reservations:
+          devices: [{ driver: nvidia, count: 1, capabilities: [gpu] }]
+    healthcheck:
+      test: ["CMD-SHELL", "curl -sf http://localhost:8001/v1/models || exit 1"]
+      interval: 15s
+      timeout: 5s
+      retries: 40
+
+  app:
+    build: .
+    env_file: .env
+    environment:
+      - VLLM_BASE_URL=${VLLM_BASE_URL:-http://vllm:8001/v1}
+      - VLLM_MODEL=${VLLM_MODEL:-bfsi-router}
+      - DOMAIN=${DOMAIN:-bfsi}
+      - JOBS_DB=/app/results/jobs.db
+      - RAG_EMBEDDINGS_DEVICE=cpu
+    volumes:
+      - ./results:/app/results
+      - ./models:/app/models:ro
+    ports: ["8000:8000"]
+    depends_on:
+      vllm:
+        condition: service_healthy
+        required: false
+    profiles: ["", "hosted"]
+
+  worker:
+    build: .
+    command: python -m jobs.worker --lease-seconds 30
+    environment:
+      - JOBS_DB=/app/results/jobs.db
+    volumes:
+      - ./results:/app/results
+    profiles: ["", "hosted"]
+
+  jobs-api:
+    build: .
+    command: uvicorn jobs.api:app --host 0.0.0.0 --port 8010
+    environment:
+      - JOBS_DB=/app/results/jobs.db
+    volumes:
+      - ./results:/app/results
+    ports: ["8010:8010"]
+    profiles: ["", "hosted"]
+
+volumes:
+  hf-cache:

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "Q1",
+    "question": "What is the return window for electronics?",
+    "expected_behavior": "detect_conflict_or_clarify",
+    "answerable": true
+  },
+  {
+    "id": "Q2",
+    "question": "How do I cancel order ORD-9912?",
+    "expected_behavior": "insufficient_context",
+    "answerable": false
+  },
+  {
+    "id": "Q3",
+    "question": "Can I return innerwear if the tag is removed?",
+    "expected_behavior": "answer_from_policy",
+    "answerable": true
+  },
+  {
+    "id": "Q4",
+    "question": "What is the capital of France?",
+    "expected_behavior": "out_of_scope",
+    "answerable": false
+  }
+]

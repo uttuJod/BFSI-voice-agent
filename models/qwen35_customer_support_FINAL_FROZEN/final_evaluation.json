@@ -1,0 +1,26 @@
+{
+  "model": "Qwen3.5-4B",
+  "stage": "Final Stage-2B",
+  "status": "FROZEN",
+  "benchmark_cases": 120,
+  "json_valid_rate": 1.0,
+  "schema_valid_rate": 1.0,
+  "intent_accuracy": 0.975,
+  "tool_accuracy": 0.975,
+  "rag_routing_accuracy": 1.0,
+  "clarification_accuracy": 1.0,
+  "argument_accuracy": 0.975,
+  "notes": {
+    "passed_cases": 117,
+    "failed_cases": 3,
+    "remaining_failure_cluster": "identity_verification taxonomy boundary",
+    "perfect_groups": [
+      "exact_date",
+      "vague_date",
+      "out_of_scope",
+      "paid_already",
+      "policy_question",
+      "privacy_sensitive"
+    ]
+  }
+}

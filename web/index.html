@@ -1,0 +1,690 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width,initial-scale=1"
+  />
+
+  <title>BFSI Voice Agent</title>
+
+  <style>
+    :root {
+      font-family:
+        Inter, system-ui, sans-serif;
+      color-scheme: dark;
+      background: #0d1117;
+      color: #e6edf3;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 24px;
+      background: #0d1117;
+    }
+
+    .shell {
+      max-width: 980px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 14px;
+      padding: 18px;
+      margin-bottom: 16px;
+    }
+
+    .row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    button,
+    select {
+      padding: 10px 14px;
+      border-radius: 9px;
+      border: 1px solid #3d444d;
+      background: #21262d;
+      color: #e6edf3;
+    }
+
+    button {
+      cursor: pointer;
+      font-weight: 700;
+    }
+
+    .primary {
+      background: #238636;
+    }
+
+    .danger {
+      background: #8e2424;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns:
+        1fr 1fr;
+      gap: 16px;
+    }
+
+    .label {
+      color: #8b949e;
+      font-size: 12px;
+      text-transform: uppercase;
+      margin-bottom: 7px;
+    }
+
+    .box {
+      min-height: 60px;
+      white-space: pre-wrap;
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 70px;
+      background: #0d1117;
+      color: #e6edf3;
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      padding: 10px;
+      margin-bottom: 8px;
+    }
+
+    pre {
+      white-space: pre-wrap;
+      font-size: 12px;
+    }
+
+    @media (
+      max-width: 760px
+    ) {
+      .grid {
+        grid-template-columns:
+          1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+<div class="shell">
+  <h1>BFSI Voice Agent</h1>
+
+  <p>
+    <strong>Auto</strong> replies in the language you speak and
+    switches mid-conversation without restarting. The fixed options
+    lock the <strong>answer language</strong>.
+    Your spoken input may be different.
+  </p>
+
+  <div class="card">
+    <div class="label">
+      Answer language
+    </div>
+
+    <div class="row">
+      <select id="language">
+        <option value="auto" selected>
+          Auto · match the caller
+        </option>
+
+        <option value="english">
+          English only
+        </option>
+
+        <option value="hindi">
+          हिन्दी / Hindi only
+        </option>
+      </select>
+
+      <button
+        id="start"
+        class="primary"
+      >
+        Start Voice Session
+      </button>
+
+      <button
+        id="stop"
+        class="danger"
+        disabled
+      >
+        Stop
+      </button>
+
+      <span id="status">
+        Offline
+      </span>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <div class="label">
+        User transcript
+      </div>
+
+      <div
+        id="transcript"
+        class="box"
+      >
+        —
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="label">
+        Assistant response
+      </div>
+
+      <div
+        id="assistant"
+        class="box"
+      >
+        —
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="label">
+      Typed test
+    </div>
+
+    <textarea
+      id="typed"
+      placeholder="Type any English or Hindi customer-support question."
+    ></textarea>
+
+    <button id="sendTyped">
+      Send
+    </button>
+  </div>
+
+  <div class="card">
+    <div class="label">
+      AI trace
+    </div>
+
+    <pre id="trace">—</pre>
+  </div>
+</div>
+
+<script>
+  let socket = null;
+  let stream = null;
+
+  let captureContext = null;
+  let captureNode = null;
+  let captureSource = null;
+  let silentGain = null;
+
+  let playbackContext = null;
+  let playbackCursor = 0;
+
+  const playing =
+    new Set();
+
+  const language =
+    document.getElementById(
+      "language"
+    );
+
+  const startButton =
+    document.getElementById(
+      "start"
+    );
+
+  const stopButton =
+    document.getElementById(
+      "stop"
+    );
+
+  const status =
+    document.getElementById(
+      "status"
+    );
+
+  const transcript =
+    document.getElementById(
+      "transcript"
+    );
+
+  const assistant =
+    document.getElementById(
+      "assistant"
+    );
+
+  const trace =
+    document.getElementById(
+      "trace"
+    );
+
+  async function ensurePlayback() {
+    if (!playbackContext) {
+      playbackContext =
+        new AudioContext({
+          sampleRate: 44100,
+        });
+    }
+
+    if (
+      playbackContext.state
+      === "suspended"
+    ) {
+      await playbackContext.resume();
+    }
+  }
+
+  function clearAudio() {
+    for (
+      const source
+      of playing
+    ) {
+      try {
+        source.stop();
+      } catch (_) {}
+    }
+
+    playing.clear();
+
+    if (playbackContext) {
+      playbackCursor =
+        playbackContext.currentTime;
+    }
+  }
+
+  async function playAudio(
+    data
+  ) {
+    await ensurePlayback();
+
+    const usable =
+      data.byteLength
+      - (
+        data.byteLength % 4
+      );
+
+    if (usable <= 0) {
+      return;
+    }
+
+    const pcm =
+      new Float32Array(
+        data.slice(
+          0,
+          usable
+        )
+      );
+
+    const buffer =
+      playbackContext
+        .createBuffer(
+          1,
+          pcm.length,
+          44100
+        );
+
+    buffer
+      .getChannelData(0)
+      .set(pcm);
+
+    const source =
+      playbackContext
+        .createBufferSource();
+
+    source.buffer = buffer;
+
+    source.connect(
+      playbackContext.destination
+    );
+
+    const startAt =
+      Math.max(
+        playbackCursor,
+        playbackContext.currentTime
+        + 0.01
+      );
+
+    source.start(
+      startAt
+    );
+
+    playbackCursor =
+      startAt
+      + buffer.duration;
+
+    playing.add(
+      source
+    );
+
+    source.onended =
+      () => playing.delete(
+        source
+      );
+  }
+
+  async function startMic() {
+    stream =
+      await navigator
+        .mediaDevices
+        .getUserMedia({
+          audio: {
+            echoCancellation:
+              true,
+            noiseSuppression:
+              true,
+            autoGainControl:
+              true,
+            channelCount:
+              1,
+          },
+          video: false,
+        });
+
+    captureContext =
+      new AudioContext();
+
+    await captureContext
+      .audioWorklet
+      .addModule(
+        "/pcm-worklet.js"
+      );
+
+    captureSource =
+      captureContext
+        .createMediaStreamSource(
+          stream
+        );
+
+    captureNode =
+      new AudioWorkletNode(
+        captureContext,
+        "pcm16-downsampler"
+      );
+
+    silentGain =
+      captureContext
+        .createGain();
+
+    silentGain.gain.value =
+      0;
+
+    captureNode.port.onmessage =
+      (event) => {
+        if (
+          socket
+          && socket.readyState
+          === WebSocket.OPEN
+        ) {
+          socket.send(
+            event.data
+          );
+        }
+      };
+
+    captureSource.connect(
+      captureNode
+    );
+
+    captureNode.connect(
+      silentGain
+    );
+
+    silentGain.connect(
+      captureContext.destination
+    );
+  }
+
+  async function stopMic() {
+    try {
+      captureNode?.disconnect();
+      captureSource?.disconnect();
+      silentGain?.disconnect();
+    } catch (_) {}
+
+    if (stream) {
+      for (
+        const track
+        of stream.getTracks()
+      ) {
+        track.stop();
+      }
+    }
+
+    if (captureContext) {
+      try {
+        await captureContext.close();
+      } catch (_) {}
+    }
+
+    stream = null;
+    captureContext = null;
+    captureNode = null;
+    captureSource = null;
+    silentGain = null;
+  }
+
+  function send(
+    payload
+  ) {
+    if (
+      socket
+      && socket.readyState
+      === WebSocket.OPEN
+    ) {
+      socket.send(
+        JSON.stringify(
+          payload
+        )
+      );
+    }
+  }
+
+  function handle(
+    message
+  ) {
+    if (
+      message.type
+      === "transcript"
+    ) {
+      transcript.textContent =
+        message.text;
+    }
+
+    if (
+      message.type
+      === "assistant_text"
+    ) {
+      assistant.textContent =
+        message.text;
+    }
+
+    if (
+      message.type
+      === "ai_trace"
+    ) {
+      trace.textContent =
+        JSON.stringify(
+          message.trace,
+          null,
+          2
+        );
+    }
+
+    if (
+      message.type
+      === "agent_state"
+    ) {
+      status.textContent =
+        message.detail
+        || message.state;
+    }
+
+    if (
+      message.type
+      === "clear_audio"
+      || message.type
+      === "barge_in"
+    ) {
+      const stopStart = performance.now();
+      clearAudio();
+      const clientStopMs = performance.now() - stopStart;
+
+      if (message.type === "barge_in") {
+        // Tell the server how long the browser took to silence playback so
+        // the full onset-to-silence latency can be recorded server-side.
+        send({
+          type: "barge_ack",
+          barge_id: message.barge_id,
+          client_stop_ms: Number(clientStopMs.toFixed(2)),
+        });
+      }
+    }
+  }
+
+  async function start() {
+    startButton.disabled =
+      true;
+
+    language.disabled =
+      true;
+
+    await ensurePlayback();
+
+    const proto =
+      location.protocol === "https:"
+        ? "wss"
+        : "ws";
+
+    socket =
+      new WebSocket(
+        `${proto}://${location.host}/ws/voice`
+      );
+
+    socket.binaryType =
+      "arraybuffer";
+
+    socket.onmessage =
+      async (event) => {
+        if (
+          event.data
+          instanceof ArrayBuffer
+        ) {
+          await playAudio(
+            event.data
+          );
+          return;
+        }
+
+        handle(
+          JSON.parse(
+            event.data
+          )
+        );
+      };
+
+    await new Promise(
+      (resolve, reject) => {
+        socket.onopen =
+          resolve;
+
+        socket.onerror =
+          reject;
+      }
+    );
+
+    await startMic();
+
+    send({
+      type:
+        "start_session",
+      language:
+        language.value,
+    });
+
+    stopButton.disabled =
+      false;
+
+    status.textContent =
+      `Output: ${language.value}`;
+  }
+
+  async function stop() {
+    send({
+      type:
+        "stop_session",
+    });
+
+    clearAudio();
+
+    await stopMic();
+
+    try {
+      socket?.close();
+    } catch (_) {}
+
+    socket = null;
+
+    startButton.disabled =
+      false;
+
+    stopButton.disabled =
+      true;
+
+    language.disabled =
+      false;
+
+    status.textContent =
+      "Offline";
+  }
+
+  startButton.addEventListener(
+    "click",
+    start
+  );
+
+  stopButton.addEventListener(
+    "click",
+    stop
+  );
+
+  document
+    .getElementById(
+      "sendTyped"
+    )
+    .addEventListener(
+      "click",
+      () => {
+        const text =
+          document
+            .getElementById(
+              "typed"
+            )
+            .value
+            .trim();
+
+        if (!text) {
+          return;
+        }
+
+        send({
+          type:
+            "text_query",
+          text,
+        });
+      }
+    );
+</script>
+</body>
+</html>

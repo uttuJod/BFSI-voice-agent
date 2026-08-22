@@ -1,0 +1,24 @@
+# Application runtime (Python 3.10+). vLLM is NOT installed here; it runs
+# in its own environment (wsl/install_vllm.sh) or the docker "vllm" service.
+pydantic>=2.7,<3
+numpy>=1.26,<3
+fastapi>=0.110,<1
+uvicorn[standard]>=0.29,<1
+python-dotenv>=1.0,<2
+httpx>=0.27,<1
+openai>=1.30,<2
+websockets>=12,<14
+
+# RAG
+sentence-transformers>=3.0,<4
+faiss-cpu>=1.8,<2
+sentencepiece>=0.2,<1
+sacremoses>=0.1,<1
+
+# Voice
+torch>=2.2,<3
+silero-vad>=5.1,<6
+
+# Tests
+pytest>=8.0,<9
+pytest-asyncio>=0.23,<1

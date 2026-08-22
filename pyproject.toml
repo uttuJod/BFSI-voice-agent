@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bfsi-voice-agent"
+version = "1.0.0"
+description = "Multilingual BFSI voice agent: fine-tuned router, self-correcting RAG, realtime voice, guaranteed-delivery writes"
+requires-python = ">=3.10"
+dependencies = [
+    "pydantic>=2.7,<3",
+    "sentence-transformers>=3.0",
+    "faiss-cpu>=1.8",
+    "numpy>=1.26",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["rag*", "eval*", "voice*", "integration*", "business*", "jobs*", "bench*", "app*"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+pythonpath = ["."]

@@ -1,0 +1,1272 @@
+[
+  {
+    "id": "L120-paid-01",
+    "user": "The transfer was completed late last night.",
+    "intent": "paid_already",
+    "tool": "record_payment_reported",
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "paid_already"
+  },
+  {
+    "id": "L120-paid-02",
+    "user": "I sent the full amount earlier this morning.",
+    "intent": "paid_already",
+    "tool": "record_payment_reported",
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "paid_already"
+  },
+  {
+    "id": "L120-paid-03",
+    "user": "The payment has already left my bank account.",
+    "intent": "paid_already",
+    "tool": "record_payment_reported",
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "paid_already"
+  },
+  {
+    "id": "L120-paid-04",
+    "user": "I completed the bank transfer yesterday afternoon.",
+    "intent": "paid_already",
+    "tool": "record_payment_reported",
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "paid_already"
+  },
+  {
+    "id": "L120-paid-05",
+    "user": "The money was sent before you called me.",
+    "intent": "paid_already",
+    "tool": "record_payment_reported",
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "paid_already"
+  },
+  {
+    "id": "L120-paid-06",
+    "user": "I've already completed the repayment.",
+    "intent": "paid_already",
+    "tool": "record_payment_reported",
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "paid_already"
+  },
+  {
+    "id": "L120-paid-07",
+    "user": "The amount was transferred this morning.",
+    "intent": "paid_already",
+    "tool": "record_payment_reported",
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "paid_already"
+  },
+  {
+    "id": "L120-paid-08",
+    "user": "I already cleared this payment yesterday.",
+    "intent": "paid_already",
+    "tool": "record_payment_reported",
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "paid_already"
+  },
+  {
+    "id": "L120-paid-09",
+    "user": "Payment kal shaam ko complete kar diya tha.",
+    "intent": "paid_already",
+    "tool": "record_payment_reported",
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "paid_already"
+  },
+  {
+    "id": "L120-paid-10",
+    "user": "Maine amount subah hi transfer kar diya.",
+    "intent": "paid_already",
+    "tool": "record_payment_reported",
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "paid_already"
+  },
+  {
+    "id": "L120-paid-11",
+    "user": "UPI payment already successful ho chuka hai.",
+    "intent": "paid_already",
+    "tool": "record_payment_reported",
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "paid_already"
+  },
+  {
+    "id": "L120-paid-12",
+    "user": "Paisa kal account se send kar diya tha.",
+    "intent": "paid_already",
+    "tool": "record_payment_reported",
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "paid_already"
+  },
+  {
+    "id": "L120-paid-13",
+    "user": "Main payment pehle hi kar chuka hoon.",
+    "intent": "paid_already",
+    "tool": "record_payment_reported",
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "paid_already"
+  },
+  {
+    "id": "L120-paid-14",
+    "user": "Amount already bank se transfer ho gaya.",
+    "intent": "paid_already",
+    "tool": "record_payment_reported",
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "paid_already"
+  },
+  {
+    "id": "L120-paid-15",
+    "user": "मैंने आज सुबह भुगतान कर दिया था।",
+    "intent": "paid_already",
+    "tool": "record_payment_reported",
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "paid_already"
+  },
+  {
+    "id": "L120-paid-16",
+    "user": "राशि कल ही भेज दी गई थी।",
+    "intent": "paid_already",
+    "tool": "record_payment_reported",
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "paid_already"
+  },
+  {
+    "id": "L120-paid-17",
+    "user": "मैं यह भुगतान पहले ही कर चुका हूँ।",
+    "intent": "paid_already",
+    "tool": "record_payment_reported",
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "paid_already"
+  },
+  {
+    "id": "L120-paid-18",
+    "user": "पैसे मेरे खाते से जा चुके हैं।",
+    "intent": "paid_already",
+    "tool": "record_payment_reported",
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "paid_already"
+  },
+  {
+    "id": "L120-paid-19",
+    "user": "भुगतान कल शाम पूरा हो गया था।",
+    "intent": "paid_already",
+    "tool": "record_payment_reported",
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "paid_already"
+  },
+  {
+    "id": "L120-paid-20",
+    "user": "मैंने पूरी राशि पहले ही भेज दी है।",
+    "intent": "paid_already",
+    "tool": "record_payment_reported",
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "paid_already"
+  },
+  {
+    "id": "L120-policy-01",
+    "user": "What does the current hardship policy say about temporary payment breaks?",
+    "intent": "policy_question",
+    "tool": null,
+    "requires_rag": true,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "policy_question"
+  },
+  {
+    "id": "L120-policy-02",
+    "user": "Does your latest hardship policy permit smaller monthly instalments?",
+    "intent": "policy_question",
+    "tool": null,
+    "requires_rag": true,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "policy_question"
+  },
+  {
+    "id": "L120-policy-03",
+    "user": "Under the current policy, can a hardship customer pause repayments?",
+    "intent": "policy_question",
+    "tool": null,
+    "requires_rag": true,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "policy_question"
+  },
+  {
+    "id": "L120-policy-04",
+    "user": "What support options are defined in the hardship policy?",
+    "intent": "policy_question",
+    "tool": null,
+    "requires_rag": true,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "policy_question"
+  },
+  {
+    "id": "L120-policy-05",
+    "user": "Does your hardship policy mention temporary interest relief?",
+    "intent": "policy_question",
+    "tool": null,
+    "requires_rag": true,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "policy_question"
+  },
+  {
+    "id": "L120-policy-06",
+    "user": "How does the present hardship policy handle reduced income?",
+    "intent": "policy_question",
+    "tool": null,
+    "requires_rag": true,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "policy_question"
+  },
+  {
+    "id": "L120-policy-07",
+    "user": "What are the current rules for hardship repayment plans?",
+    "intent": "policy_question",
+    "tool": null,
+    "requires_rag": true,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "policy_question"
+  },
+  {
+    "id": "L120-policy-08",
+    "user": "Does the hardship policy allow repayment dates to be changed?",
+    "intent": "policy_question",
+    "tool": null,
+    "requires_rag": true,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "policy_question"
+  },
+  {
+    "id": "L120-policy-09",
+    "user": "Current hardship policy mein payment break ka rule kya hai?",
+    "intent": "policy_question",
+    "tool": null,
+    "requires_rag": true,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "policy_question"
+  },
+  {
+    "id": "L120-policy-10",
+    "user": "Hardship policy ke according reduced instalment allowed hai?",
+    "intent": "policy_question",
+    "tool": null,
+    "requires_rag": true,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "policy_question"
+  },
+  {
+    "id": "L120-policy-11",
+    "user": "Current policy mein hardship customers ke kya options hain?",
+    "intent": "policy_question",
+    "tool": null,
+    "requires_rag": true,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "policy_question"
+  },
+  {
+    "id": "L120-policy-12",
+    "user": "Hardship rules mein temporary relief mil sakta hai kya?",
+    "intent": "policy_question",
+    "tool": null,
+    "requires_rag": true,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "policy_question"
+  },
+  {
+    "id": "L120-policy-13",
+    "user": "Policy ke hisaab se hardship repayment plan kaise work karta hai?",
+    "intent": "policy_question",
+    "tool": null,
+    "requires_rag": true,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "policy_question"
+  },
+  {
+    "id": "L120-policy-14",
+    "user": "Hardship policy mein interest relief ka provision hai kya?",
+    "intent": "policy_question",
+    "tool": null,
+    "requires_rag": true,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "policy_question"
+  },
+  {
+    "id": "L120-policy-15",
+    "user": "क्या मौजूदा hardship policy में payment holiday की अनुमति है?",
+    "intent": "policy_question",
+    "tool": null,
+    "requires_rag": true,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "policy_question"
+  },
+  {
+    "id": "L120-policy-16",
+    "user": "hardship policy में कम किस्त का विकल्प क्या है?",
+    "intent": "policy_question",
+    "tool": null,
+    "requires_rag": true,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "policy_question"
+  },
+  {
+    "id": "L120-policy-17",
+    "user": "वर्तमान hardship rules में temporary relief कैसे मिलता है?",
+    "intent": "policy_question",
+    "tool": null,
+    "requires_rag": true,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "policy_question"
+  },
+  {
+    "id": "L120-policy-18",
+    "user": "क्या hardship policy repayment schedule बदलने देती है?",
+    "intent": "policy_question",
+    "tool": null,
+    "requires_rag": true,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "policy_question"
+  },
+  {
+    "id": "L120-policy-19",
+    "user": "मौजूदा policy hardship customers के लिए क्या options देती है?",
+    "intent": "policy_question",
+    "tool": null,
+    "requires_rag": true,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "policy_question"
+  },
+  {
+    "id": "L120-policy-20",
+    "user": "hardship policy में interest relief के क्या नियम हैं?",
+    "intent": "policy_question",
+    "tool": null,
+    "requires_rag": true,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "policy_question"
+  },
+  {
+    "id": "L120-privacy-01",
+    "user": "My uncle asked me to find out his outstanding balance.",
+    "intent": "privacy_sensitive",
+    "tool": null,
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "privacy_sensitive"
+  },
+  {
+    "id": "L120-privacy-02",
+    "user": "My wife gave me permission to check her repayment status.",
+    "intent": "privacy_sensitive",
+    "tool": null,
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "privacy_sensitive"
+  },
+  {
+    "id": "L120-privacy-03",
+    "user": "My brother wants me to see what he currently owes.",
+    "intent": "privacy_sensitive",
+    "tool": null,
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "privacy_sensitive"
+  },
+  {
+    "id": "L120-privacy-04",
+    "user": "Can you show me my daughter's account information?",
+    "intent": "privacy_sensitive",
+    "tool": null,
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "privacy_sensitive"
+  },
+  {
+    "id": "L120-privacy-05",
+    "user": "My friend authorised me to ask about his balance.",
+    "intent": "privacy_sensitive",
+    "tool": null,
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "privacy_sensitive"
+  },
+  {
+    "id": "L120-privacy-06",
+    "user": "My husband told me to check his payment history.",
+    "intent": "privacy_sensitive",
+    "tool": null,
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "privacy_sensitive"
+  },
+  {
+    "id": "L120-privacy-07",
+    "user": "My cousin said I can access her account details.",
+    "intent": "privacy_sensitive",
+    "tool": null,
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "privacy_sensitive"
+  },
+  {
+    "id": "L120-privacy-08",
+    "user": "My mother wants me to ask what amount remains unpaid.",
+    "intent": "privacy_sensitive",
+    "tool": null,
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "privacy_sensitive"
+  },
+  {
+    "id": "L120-privacy-09",
+    "user": "Meri wife ne bola hai uska outstanding check karne ko.",
+    "intent": "privacy_sensitive",
+    "tool": null,
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "privacy_sensitive"
+  },
+  {
+    "id": "L120-privacy-10",
+    "user": "Mere brother ne permission di hai, uska balance bata do.",
+    "intent": "privacy_sensitive",
+    "tool": null,
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "privacy_sensitive"
+  },
+  {
+    "id": "L120-privacy-11",
+    "user": "Mummy ne kaha hai unka repayment status check kar loon.",
+    "intent": "privacy_sensitive",
+    "tool": null,
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "privacy_sensitive"
+  },
+  {
+    "id": "L120-privacy-12",
+    "user": "Mera cousin bola hai uska account status dekhne ko.",
+    "intent": "privacy_sensitive",
+    "tool": null,
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "privacy_sensitive"
+  },
+  {
+    "id": "L120-privacy-13",
+    "user": "Mere husband ka current balance bata do, unhone permission di hai.",
+    "intent": "privacy_sensitive",
+    "tool": null,
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "privacy_sensitive"
+  },
+  {
+    "id": "L120-privacy-14",
+    "user": "Friend ne authorize kiya hai, uski payment history batao.",
+    "intent": "privacy_sensitive",
+    "tool": null,
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "privacy_sensitive"
+  },
+  {
+    "id": "L120-privacy-15",
+    "user": "मेरी माँ ने कहा है कि मैं उनका balance पूछ सकता हूँ।",
+    "intent": "privacy_sensitive",
+    "tool": null,
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "privacy_sensitive"
+  },
+  {
+    "id": "L120-privacy-16",
+    "user": "मेरे भाई ने मुझे उसका account status देखने को कहा है।",
+    "intent": "privacy_sensitive",
+    "tool": null,
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "privacy_sensitive"
+  },
+  {
+    "id": "L120-privacy-17",
+    "user": "मेरी पत्नी ने अनुमति दी है, उसका outstanding बताइए।",
+    "intent": "privacy_sensitive",
+    "tool": null,
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "privacy_sensitive"
+  },
+  {
+    "id": "L120-privacy-18",
+    "user": "मेरे पिता की payment history दिखा दीजिए।",
+    "intent": "privacy_sensitive",
+    "tool": null,
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "privacy_sensitive"
+  },
+  {
+    "id": "L120-privacy-19",
+    "user": "मेरी बहन ने कहा है कि मैं उसका account check करूँ।",
+    "intent": "privacy_sensitive",
+    "tool": null,
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "privacy_sensitive"
+  },
+  {
+    "id": "L120-privacy-20",
+    "user": "मेरे दोस्त ने permission दी है, उसका balance बताइए।",
+    "intent": "privacy_sensitive",
+    "tool": null,
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "privacy_sensitive"
+  },
+  {
+    "id": "L120-verify-01",
+    "user": "What verification is required before you access my account?",
+    "intent": "identity_verification",
+    "tool": "get_customer_account",
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {
+      "verification_required": true
+    },
+    "group": "identity_verification"
+  },
+  {
+    "id": "L120-verify-02",
+    "user": "Do you need to confirm my identity before showing my balance?",
+    "intent": "identity_verification",
+    "tool": "get_customer_account",
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {
+      "verification_required": true
+    },
+    "group": "identity_verification"
+  },
+  {
+    "id": "L120-verify-03",
+    "user": "Please verify me before retrieving my account details.",
+    "intent": "identity_verification",
+    "tool": "get_customer_account",
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {
+      "verification_required": true
+    },
+    "group": "identity_verification"
+  },
+  {
+    "id": "L120-verify-04",
+    "user": "How do you verify that I am the account holder?",
+    "intent": "identity_verification",
+    "tool": "get_customer_account",
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {
+      "verification_required": true
+    },
+    "group": "identity_verification"
+  },
+  {
+    "id": "L120-verify-05",
+    "user": "Can my identity be verified before you check my repayment status?",
+    "intent": "identity_verification",
+    "tool": "get_customer_account",
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {
+      "verification_required": true
+    },
+    "group": "identity_verification"
+  },
+  {
+    "id": "L120-verify-06",
+    "user": "What identity checks happen before my account information is shown?",
+    "intent": "identity_verification",
+    "tool": "get_customer_account",
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {
+      "verification_required": true
+    },
+    "group": "identity_verification"
+  },
+  {
+    "id": "L120-verify-07",
+    "user": "Verify me first before accessing my customer record.",
+    "intent": "identity_verification",
+    "tool": "get_customer_account",
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {
+      "verification_required": true
+    },
+    "group": "identity_verification"
+  },
+  {
+    "id": "L120-verify-08",
+    "user": "Do I need to complete verification before you show my information?",
+    "intent": "identity_verification",
+    "tool": "get_customer_account",
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {
+      "verification_required": true
+    },
+    "group": "identity_verification"
+  },
+  {
+    "id": "L120-verify-09",
+    "user": "Mera account open karne se pehle verification kaise hoga?",
+    "intent": "identity_verification",
+    "tool": "get_customer_account",
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {
+      "verification_required": true
+    },
+    "group": "identity_verification"
+  },
+  {
+    "id": "L120-verify-10",
+    "user": "Balance dikhane se pehle meri identity verify karoge?",
+    "intent": "identity_verification",
+    "tool": "get_customer_account",
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {
+      "verification_required": true
+    },
+    "group": "identity_verification"
+  },
+  {
+    "id": "L120-verify-11",
+    "user": "Please pehle mujhe verify karo, phir account details access karo.",
+    "intent": "identity_verification",
+    "tool": "get_customer_account",
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {
+      "verification_required": true
+    },
+    "group": "identity_verification"
+  },
+  {
+    "id": "L120-verify-12",
+    "user": "Mere account ke liye identity check required hai kya?",
+    "intent": "identity_verification",
+    "tool": "get_customer_account",
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {
+      "verification_required": true
+    },
+    "group": "identity_verification"
+  },
+  {
+    "id": "L120-verify-13",
+    "user": "Account information se pehle verification process kya hai?",
+    "intent": "identity_verification",
+    "tool": "get_customer_account",
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {
+      "verification_required": true
+    },
+    "group": "identity_verification"
+  },
+  {
+    "id": "L120-verify-14",
+    "user": "Mujhe verify karke hi mera current balance check karo.",
+    "intent": "identity_verification",
+    "tool": "get_customer_account",
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {
+      "verification_required": true
+    },
+    "group": "identity_verification"
+  },
+  {
+    "id": "L120-verify-15",
+    "user": "मेरी account details देखने से पहले verification कैसे होगा?",
+    "intent": "identity_verification",
+    "tool": "get_customer_account",
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {
+      "verification_required": true
+    },
+    "group": "identity_verification"
+  },
+  {
+    "id": "L120-verify-16",
+    "user": "पहले मेरी identity verify कीजिए, फिर account खोलिए।",
+    "intent": "identity_verification",
+    "tool": "get_customer_account",
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {
+      "verification_required": true
+    },
+    "group": "identity_verification"
+  },
+  {
+    "id": "L120-verify-17",
+    "user": "क्या balance बताने से पहले मेरी पहचान verify करनी होगी?",
+    "intent": "identity_verification",
+    "tool": "get_customer_account",
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {
+      "verification_required": true
+    },
+    "group": "identity_verification"
+  },
+  {
+    "id": "L120-verify-18",
+    "user": "मेरे account के लिए कौन-सा verification जरूरी है?",
+    "intent": "identity_verification",
+    "tool": "get_customer_account",
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {
+      "verification_required": true
+    },
+    "group": "identity_verification"
+  },
+  {
+    "id": "L120-verify-19",
+    "user": "मेरी जानकारी access करने से पहले identity check करें।",
+    "intent": "identity_verification",
+    "tool": "get_customer_account",
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {
+      "verification_required": true
+    },
+    "group": "identity_verification"
+  },
+  {
+    "id": "L120-verify-20",
+    "user": "क्या आप पहले verify करेंगे कि account मेरा ही है?",
+    "intent": "identity_verification",
+    "tool": "get_customer_account",
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {
+      "verification_required": true
+    },
+    "group": "identity_verification"
+  },
+  {
+    "id": "L120-date-exact-01",
+    "user": "I will pay ₹2350 on 14 April 2027.",
+    "intent": "promise_to_pay",
+    "tool": "record_promise_to_pay",
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {
+      "date": "2027-04-14",
+      "amount": 2350
+    },
+    "group": "exact_date"
+  },
+  {
+    "id": "L120-date-exact-02",
+    "user": "Please record ₹4100 for 7 May 2027.",
+    "intent": "promise_to_pay",
+    "tool": "record_promise_to_pay",
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {
+      "date": "2027-05-07",
+      "amount": 4100
+    },
+    "group": "exact_date"
+  },
+  {
+    "id": "L120-date-exact-03",
+    "user": "I can settle ₹1850 on 23 June 2027.",
+    "intent": "promise_to_pay",
+    "tool": "record_promise_to_pay",
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {
+      "date": "2027-06-23",
+      "amount": 1850
+    },
+    "group": "exact_date"
+  },
+  {
+    "id": "L120-date-exact-04",
+    "user": "₹5200 will be paid on 9 July 2027.",
+    "intent": "promise_to_pay",
+    "tool": "record_promise_to_pay",
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {
+      "date": "2027-07-09",
+      "amount": 5200
+    },
+    "group": "exact_date"
+  },
+  {
+    "id": "L120-date-exact-05",
+    "user": "I will transfer ₹2750 on 16 August 2027.",
+    "intent": "promise_to_pay",
+    "tool": "record_promise_to_pay",
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {
+      "date": "2027-08-16",
+      "amount": 2750
+    },
+    "group": "exact_date"
+  },
+  {
+    "id": "L120-date-exact-06",
+    "user": "11 April 2027 ko ₹3300 pay karunga.",
+    "intent": "promise_to_pay",
+    "tool": "record_promise_to_pay",
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {
+      "date": "2027-04-11",
+      "amount": 3300
+    },
+    "group": "exact_date"
+  },
+  {
+    "id": "L120-date-exact-07",
+    "user": "25 May 2027 ko 1450 rupaye transfer karunga.",
+    "intent": "promise_to_pay",
+    "tool": "record_promise_to_pay",
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {
+      "date": "2027-05-25",
+      "amount": 1450
+    },
+    "group": "exact_date"
+  },
+  {
+    "id": "L120-date-exact-08",
+    "user": "मैं 5 जून 2027 को ₹3800 जमा करूंगा।",
+    "intent": "promise_to_pay",
+    "tool": "record_promise_to_pay",
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {
+      "date": "2027-06-05",
+      "amount": 3800
+    },
+    "group": "exact_date"
+  },
+  {
+    "id": "L120-date-exact-09",
+    "user": "मैं 19 जुलाई 2027 को ₹2100 का भुगतान करूंगा।",
+    "intent": "promise_to_pay",
+    "tool": "record_promise_to_pay",
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {
+      "date": "2027-07-19",
+      "amount": 2100
+    },
+    "group": "exact_date"
+  },
+  {
+    "id": "L120-date-exact-10",
+    "user": "28 अगस्त 2027 को ₹4600 चुका दूंगा।",
+    "intent": "promise_to_pay",
+    "tool": "record_promise_to_pay",
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {
+      "date": "2027-08-28",
+      "amount": 4600
+    },
+    "group": "exact_date"
+  },
+  {
+    "id": "L120-date-vague-01",
+    "user": "I could probably pay something sometime after the 14th.",
+    "intent": "ambiguous",
+    "tool": null,
+    "requires_rag": false,
+    "needs_clarification": true,
+    "expected_args": {},
+    "group": "vague_date"
+  },
+  {
+    "id": "L120-date-vague-02",
+    "user": "Around ₹2700 might be possible once salary arrives.",
+    "intent": "ambiguous",
+    "tool": null,
+    "requires_rag": false,
+    "needs_clarification": true,
+    "expected_args": {},
+    "group": "vague_date"
+  },
+  {
+    "id": "L120-date-vague-03",
+    "user": "I should have money available sometime toward month-end.",
+    "intent": "ambiguous",
+    "tool": null,
+    "requires_rag": false,
+    "needs_clarification": true,
+    "expected_args": {},
+    "group": "vague_date"
+  },
+  {
+    "id": "L120-date-vague-04",
+    "user": "Maybe I can make the payment during the first week next month.",
+    "intent": "ambiguous",
+    "tool": null,
+    "requires_rag": false,
+    "needs_clarification": true,
+    "expected_args": {},
+    "group": "vague_date"
+  },
+  {
+    "id": "L120-date-vague-05",
+    "user": "I might manage ₹1900 sometime next week.",
+    "intent": "ambiguous",
+    "tool": null,
+    "requires_rag": false,
+    "needs_clarification": true,
+    "expected_args": {},
+    "group": "vague_date"
+  },
+  {
+    "id": "L120-date-vague-06",
+    "user": "Salary aane ke kuch din baad payment kar sakta hoon.",
+    "intent": "ambiguous",
+    "tool": null,
+    "requires_rag": false,
+    "needs_clarification": true,
+    "expected_args": {},
+    "group": "vague_date"
+  },
+  {
+    "id": "L120-date-vague-07",
+    "user": "Month end ke aas paas ₹3200 arrange ho sakta hai.",
+    "intent": "ambiguous",
+    "tool": null,
+    "requires_rag": false,
+    "needs_clarification": true,
+    "expected_args": {},
+    "group": "vague_date"
+  },
+  {
+    "id": "L120-date-vague-08",
+    "user": "Next month starting mein kuch amount pay kar paunga.",
+    "intent": "ambiguous",
+    "tool": null,
+    "requires_rag": false,
+    "needs_clarification": true,
+    "expected_args": {},
+    "group": "vague_date"
+  },
+  {
+    "id": "L120-date-vague-09",
+    "user": "शायद महीने के अंत तक कुछ भुगतान कर पाऊँ।",
+    "intent": "ambiguous",
+    "tool": null,
+    "requires_rag": false,
+    "needs_clarification": true,
+    "expected_args": {},
+    "group": "vague_date"
+  },
+  {
+    "id": "L120-date-vague-10",
+    "user": "Salary मिलने के बाद ₹2500 के आसपास दे सकता हूँ।",
+    "intent": "ambiguous",
+    "tool": null,
+    "requires_rag": false,
+    "needs_clarification": true,
+    "expected_args": {},
+    "group": "vague_date"
+  },
+  {
+    "id": "L120-oos-01",
+    "user": "Which graphics card should I buy for gaming?",
+    "intent": "out_of_scope",
+    "tool": null,
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "out_of_scope"
+  },
+  {
+    "id": "L120-oos-02",
+    "user": "Can you write a cover letter for a software job?",
+    "intent": "out_of_scope",
+    "tool": null,
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "out_of_scope"
+  },
+  {
+    "id": "L120-oos-03",
+    "user": "Explain how photosynthesis works.",
+    "intent": "out_of_scope",
+    "tool": null,
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "out_of_scope"
+  },
+  {
+    "id": "L120-oos-04",
+    "user": "What is the best restaurant in Dublin?",
+    "intent": "out_of_scope",
+    "tool": null,
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "out_of_scope"
+  },
+  {
+    "id": "L120-oos-05",
+    "user": "Can you make a weekly gym program for me?",
+    "intent": "out_of_scope",
+    "tool": null,
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "out_of_scope"
+  },
+  {
+    "id": "L120-oos-06",
+    "user": "Write Python code to scrape a website.",
+    "intent": "out_of_scope",
+    "tool": null,
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "out_of_scope"
+  },
+  {
+    "id": "L120-oos-07",
+    "user": "Recommend a good smartphone under my budget.",
+    "intent": "out_of_scope",
+    "tool": null,
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "out_of_scope"
+  },
+  {
+    "id": "L120-oos-08",
+    "user": "Can you translate this paragraph into French?",
+    "intent": "out_of_scope",
+    "tool": null,
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "out_of_scope"
+  },
+  {
+    "id": "L120-oos-09",
+    "user": "Gaming PC ke liye kaunsa processor best hai?",
+    "intent": "out_of_scope",
+    "tool": null,
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "out_of_scope"
+  },
+  {
+    "id": "L120-oos-10",
+    "user": "Mere liye resignation email draft karo.",
+    "intent": "out_of_scope",
+    "tool": null,
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "out_of_scope"
+  },
+  {
+    "id": "L120-oos-11",
+    "user": "Mujhe Python sorting algorithm samjhao.",
+    "intent": "out_of_scope",
+    "tool": null,
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "out_of_scope"
+  },
+  {
+    "id": "L120-oos-12",
+    "user": "Dublin mein achha restaurant suggest karo.",
+    "intent": "out_of_scope",
+    "tool": null,
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "out_of_scope"
+  },
+  {
+    "id": "L120-oos-13",
+    "user": "Mere liye workout routine banao.",
+    "intent": "out_of_scope",
+    "tool": null,
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "out_of_scope"
+  },
+  {
+    "id": "L120-oos-14",
+    "user": "Ek travel itinerary bana do.",
+    "intent": "out_of_scope",
+    "tool": null,
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "out_of_scope"
+  },
+  {
+    "id": "L120-oos-15",
+    "user": "मुझे नया laptop खरीदने में मदद करो।",
+    "intent": "out_of_scope",
+    "tool": null,
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "out_of_scope"
+  },
+  {
+    "id": "L120-oos-16",
+    "user": "मेरे लिए नौकरी का cover letter लिखो।",
+    "intent": "out_of_scope",
+    "tool": null,
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "out_of_scope"
+  },
+  {
+    "id": "L120-oos-17",
+    "user": "Python programming कैसे सीखें?",
+    "intent": "out_of_scope",
+    "tool": null,
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "out_of_scope"
+  },
+  {
+    "id": "L120-oos-18",
+    "user": "मुझे एक diet plan बना कर दो।",
+    "intent": "out_of_scope",
+    "tool": null,
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "out_of_scope"
+  },
+  {
+    "id": "L120-oos-19",
+    "user": "आज football match का score क्या है?",
+    "intent": "out_of_scope",
+    "tool": null,
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "out_of_scope"
+  },
+  {
+    "id": "L120-oos-20",
+    "user": "मेरे लिए holiday itinerary तैयार करो।",
+    "intent": "out_of_scope",
+    "tool": null,
+    "requires_rag": false,
+    "needs_clarification": false,
+    "expected_args": {},
+    "group": "out_of_scope"
+  }
+]

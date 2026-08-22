@@ -1,0 +1,34 @@
+[
+  {
+    "document_id": "product_catalog",
+    "title": "Product Catalog: Wireless Headphones",
+    "status": "active",
+    "domain": "catalog",
+    "language": "en",
+    "text": "Wireless Headphones (SKU WH-200). Over-ear Bluetooth 5.3 headphones with 30 hour battery life, active noise cancellation and a 1 year manufacturer warranty. Category: electronics. Return window follows the electronics rule in the returns policy. Price 2,999 rupees."
+  },
+  {
+    "document_id": "product_catalog",
+    "title": "Product Catalog: Running Shoes",
+    "status": "active",
+    "domain": "catalog",
+    "language": "en",
+    "text": "Running Shoes (SKU RS-110). Lightweight road running shoes available in sizes UK 6 to 12. Category: footwear. Returns accepted only if tried indoors with the box undamaged, per the returns policy. Price 3,499 rupees."
+  },
+  {
+    "document_id": "product_catalog",
+    "title": "Product Catalog: Smart Watch",
+    "status": "active",
+    "domain": "catalog",
+    "language": "en",
+    "text": "Smart Watch (SKU SW-300). Fitness tracking watch with heart rate sensor, GPS and 7 day battery. Category: electronics. Once the watch has been paired and activated it cannot be returned unless defective. Price 4,999 rupees."
+  },
+  {
+    "document_id": "product_catalog",
+    "title": "Product Catalog: Cotton Innerwear Pack",
+    "status": "active",
+    "domain": "catalog",
+    "language": "en",
+    "text": "Cotton Innerwear Pack (SKU IW-050). Pack of three. Category: innerwear. Not returnable for hygiene reasons unless defective on arrival. Price 599 rupees."
+  }
+]

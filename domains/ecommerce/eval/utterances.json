@@ -1,0 +1,6 @@
+[
+  { "id": "U1", "text": "Mera order kahan hai?", "language": "hi", "expected_response_language": "hi" },
+  { "id": "U2", "text": "What is the refund policy?", "language": "en", "expected_response_language": "en" },
+  { "id": "U3", "text": "Order ORD124 cancel karna hai", "language": "mixed", "expected_response_language": "hi" },
+  { "id": "U4", "text": "Return window kitne din ka hai?", "language": "hi", "expected_response_language": "hi" }
+]

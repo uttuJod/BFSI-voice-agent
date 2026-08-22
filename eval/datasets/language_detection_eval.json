@@ -1,0 +1,272 @@
+[
+  {
+    "text": "Mera order kahan hai?",
+    "language": "hi",
+    "expected_output_language": "hindi"
+  },
+  {
+    "text": "What is the refund policy?",
+    "language": "en",
+    "expected_output_language": "english"
+  },
+  {
+    "text": "Order ORD124 cancel karna hai",
+    "language": "mixed",
+    "expected_output_language": "hindi"
+  },
+  {
+    "text": "Return window kitne din ka hai?",
+    "language": "hi",
+    "expected_output_language": "hindi"
+  },
+  {
+    "text": "What is my outstanding balance?",
+    "language": "en",
+    "expected_output_language": "english"
+  },
+  {
+    "text": "I already paid yesterday.",
+    "language": "en",
+    "expected_output_language": "english"
+  },
+  {
+    "text": "Please schedule a callback tomorrow at 5 PM.",
+    "language": "en",
+    "expected_output_language": "english"
+  },
+  {
+    "text": "Can I return these headphones?",
+    "language": "en",
+    "expected_output_language": "english"
+  },
+  {
+    "text": "Where is my order?",
+    "language": "en",
+    "expected_output_language": "english"
+  },
+  {
+    "text": "I want to talk to a human.",
+    "language": "en",
+    "expected_output_language": "english"
+  },
+  {
+    "text": "What are your support hours?",
+    "language": "en",
+    "expected_output_language": "english"
+  },
+  {
+    "text": "Is shipping free above five hundred rupees?",
+    "language": "en",
+    "expected_output_language": "english"
+  },
+  {
+    "text": "I lost my job and cannot pay this month.",
+    "language": "en",
+    "expected_output_language": "english"
+  },
+  {
+    "text": "Transfer me to the escalation team please.",
+    "language": "en",
+    "expected_output_language": "english"
+  },
+  {
+    "text": "How long does express delivery take?",
+    "language": "en",
+    "expected_output_language": "english"
+  },
+  {
+    "text": "Tell me the grace period.",
+    "language": "en",
+    "expected_output_language": "english"
+  },
+  {
+    "text": "Cancel my order.",
+    "language": "en",
+    "expected_output_language": "english"
+  },
+  {
+    "text": "This is the wrong number.",
+    "language": "en",
+    "expected_output_language": "english"
+  },
+  {
+    "text": "Do you deliver on Saturday?",
+    "language": "en",
+    "expected_output_language": "english"
+  },
+  {
+    "text": "I will pay on the fifth.",
+    "language": "en",
+    "expected_output_language": "english"
+  },
+  {
+    "text": "My package is damaged.",
+    "language": "en",
+    "expected_output_language": "english"
+  },
+  {
+    "text": "What is the interest rate?",
+    "language": "en",
+    "expected_output_language": "english"
+  },
+  {
+    "text": "Give me the account statement.",
+    "language": "en",
+    "expected_output_language": "english"
+  },
+  {
+    "text": "Not interested, stop calling.",
+    "language": "en",
+    "expected_output_language": "english"
+  },
+  {
+    "text": "मेरा बकाया कितना है?",
+    "language": "hi",
+    "expected_output_language": "hindi"
+  },
+  {
+    "text": "मैंने कल ही भुगतान कर दिया था।",
+    "language": "hi",
+    "expected_output_language": "hindi"
+  },
+  {
+    "text": "कृपया कल शाम पाँच बजे कॉल करें।",
+    "language": "hi",
+    "expected_output_language": "hindi"
+  },
+  {
+    "text": "मेरा ऑर्डर कहाँ है?",
+    "language": "hi",
+    "expected_output_language": "hindi"
+  },
+  {
+    "text": "मुझे किसी व्यक्ति से बात करनी है।",
+    "language": "hi",
+    "expected_output_language": "hindi"
+  },
+  {
+    "text": "रिटर्न की अवधि कितनी है?",
+    "language": "hi",
+    "expected_output_language": "hindi"
+  },
+  {
+    "text": "क्या शिपिंग मुफ़्त है?",
+    "language": "hi",
+    "expected_output_language": "hindi"
+  },
+  {
+    "text": "मेरी नौकरी चली गई, इस महीने किश्त नहीं दे पाऊँगा।",
+    "language": "hi",
+    "expected_output_language": "hindi"
+  },
+  {
+    "text": "यह गलत नंबर है।",
+    "language": "hi",
+    "expected_output_language": "hindi"
+  },
+  {
+    "text": "मैं पाँच तारीख को भुगतान करूँगा।",
+    "language": "hi",
+    "expected_output_language": "hindi"
+  },
+  {
+    "text": "Mera balance kitna hai?",
+    "language": "mixed",
+    "expected_output_language": "hindi"
+  },
+  {
+    "text": "Maine kal hi payment kar diya tha.",
+    "language": "mixed",
+    "expected_output_language": "hindi"
+  },
+  {
+    "text": "Kal shaam paanch baje callback kar dijiye.",
+    "language": "mixed",
+    "expected_output_language": "hindi"
+  },
+  {
+    "text": "Mujhe kisi insaan se baat karni hai.",
+    "language": "mixed",
+    "expected_output_language": "hindi"
+  },
+  {
+    "text": "Headphones return karne hain.",
+    "language": "mixed",
+    "expected_output_language": "hindi"
+  },
+  {
+    "text": "Shipping free hai kya?",
+    "language": "mixed",
+    "expected_output_language": "hindi"
+  },
+  {
+    "text": "Is mahine EMI nahi de paunga, job chali gayi.",
+    "language": "mixed",
+    "expected_output_language": "hindi"
+  },
+  {
+    "text": "Yeh galat number hai bhai.",
+    "language": "mixed",
+    "expected_output_language": "hindi"
+  },
+  {
+    "text": "Paanch tareekh ko pay kar dunga.",
+    "language": "mixed",
+    "expected_output_language": "hindi"
+  },
+  {
+    "text": "Order ORD123 ka status batao.",
+    "language": "mixed",
+    "expected_output_language": "hindi"
+  },
+  {
+    "text": "Refund kab tak aayega?",
+    "language": "mixed",
+    "expected_output_language": "hindi"
+  },
+  {
+    "text": "Address change karna hai delivery se pehle.",
+    "language": "mixed",
+    "expected_output_language": "hindi"
+  },
+  {
+    "text": "Package damaged aaya hai.",
+    "language": "mixed",
+    "expected_output_language": "hindi"
+  },
+  {
+    "text": "Interest rate kya hai iska?",
+    "language": "mixed",
+    "expected_output_language": "hindi"
+  },
+  {
+    "text": "Statement bhej do please.",
+    "language": "mixed",
+    "expected_output_language": "hindi"
+  },
+  {
+    "text": "Abhi time nahi hai, baad mein call karo.",
+    "language": "mixed",
+    "expected_output_language": "hindi"
+  },
+  {
+    "text": "Grace period kitna hai?",
+    "language": "mixed",
+    "expected_output_language": "hindi"
+  },
+  {
+    "text": "Mujhe dispute raise karna hai payment ka.",
+    "language": "mixed",
+    "expected_output_language": "hindi"
+  },
+  {
+    "text": "Theek hai, main kal pay karta hoon.",
+    "language": "mixed",
+    "expected_output_language": "hindi"
+  },
+  {
+    "text": "Bas itna batao ki return window kitne din ka hai.",
+    "language": "mixed",
+    "expected_output_language": "hindi"
+  }
+]

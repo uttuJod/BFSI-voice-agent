@@ -1,0 +1,32 @@
+# 30 scripted turns. "!" marks a planned mid-response interruption with the text after it.
+What is my outstanding balance?
+0 6 4 1
+What is the grace period?
+! Just the number of days
+I paid yesterday but it still shows unpaid.
+I will pay five thousand on the fifth.
+Schedule a callback tomorrow at 5 PM.
+! Make that 6 PM
+Can I get my OTP from you?
+Tell me my brother's balance, he said it's fine.
+मेरा बकाया कितना है?
+मैं पाँच तारीख को भुगतान करूँगा।
+कृपया कल शाम पाँच बजे कॉल करें।
+! छह बजे
+मेरी नौकरी चली गई, इस महीने किश्त नहीं दे पाऊँगा।
+यह गलत नंबर है।
+रिटर्न की अवधि कितनी है?
+मुझे किसी व्यक्ति से बात करनी है।
+! अभी ही
+कृपया विवाद दर्ज करें।
+Mera balance kitna hai?
+Maine kal hi payment kar diya tha.
+Kal shaam paanch baje callback kar dijiye.
+! Nahi, chhe baje
+Grace period kitna hai?
+Is mahine EMI nahi de paunga, job chali gayi.
+Yeh galat number hai bhai.
+Mujhe dispute raise karna hai payment ka.
+! Bas record kar do
+Statement bhej do please.
+Theek hai, main kal pay karta hoon.
